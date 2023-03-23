@@ -1,0 +1,24 @@
+body {
+    background-image: url(87GMD76.jpg);
+    background-size: cover;
+}
+header {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: grid;
+    grid-template-columns:140px 180px auto 180px 140px;
+    grid-template-rows:  15%  350px 500px ;
+}
+.pokemon {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
