@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="battle.css">
+    <script src="battle.js" defer></script>
 </head>
 <body>
-    <div id="player">
-        
+
+    <div class="rival" height="250px">Rival
+        <img src="buffpika.png" height="250px">
     </div>
-    <div class="rival" height="250px">Rival</div>
     <div class="moves">
         <ul>
             <button class="special button">Special</button>
@@ -19,8 +20,8 @@
             <button class="default button">Leer!</button>
         </ul>
     </div>
-    <div class="choice" height="250px">Player</div>    
-    <script src="battle.js"></script>
-    <script src="script.js"></script>
+    <div class="choice" height="250px" id="player">Player</div>       
+    <audio id="foobar" src="battletheme.mp3" preload="auto" autoplay="autoplay" loop="loop"></audio>
 </body>
+
 </html>

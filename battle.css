@@ -15,13 +15,13 @@ ul {
 }
 .rival {
     grid-column: 3 / span 1;
-    grid-row: 1;
-    background: lightcyan
+    grid-row: 2;
 }
 .choice {
     grid-column: 1 / span 1;
     grid-row: 3;
-    background: lightcyan;
+    display: flex;
+    justify-content: right;
 }
 .moves {
     grid-column: 3;
@@ -48,4 +48,7 @@ ul {
 .default:hover {
     background: #e7e7e7;
 }
-
+.image {
+    height: 250px;
+}
+#foobar { display: none }
