@@ -10,17 +10,21 @@
 </head>
 <body>
 
-    <div class="rival" height="250px">Rival
-        <img src="buffpika.png" height="250px">
+    <div class="rival" height="250px"><span class="foe">Pika-chungus</span>
+        <img src="theboi.gif" height="250px" class="pika">
+        <p class="p2Life">999</p>
     </div>
+    <div class="text"></div>
     <div class="moves">
         <ul>
-            <button class="special button">Special</button>
-            <button class="default button">Tackle!</button>
-            <button class="default button">Leer!</button>
+            <button class="specials button">Special</button>
+            <button class="default button tackle">Tackle!</button>
+            <button class="default button leer">Leer!</button>
         </ul>
     </div>
-    <div class="choice" height="250px" id="player">Player</div>       
+    <div class="choice" height="250px" id="player"><span id="mon"></span>
+        <p class="p1Life">25</p>
+    </div>       
     <audio id="foobar" src="battletheme.mp3" preload="auto" autoplay="autoplay" loop="loop"></audio>
 </body>
 

@@ -23,6 +23,16 @@ ul {
     display: flex;
     justify-content: right;
 }
+.text {
+    grid-column: 2;
+    grid-row: 3;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px;
+    border: solid gold
+}
 .moves {
     grid-column: 3;
     grid-row: 3;
@@ -52,3 +62,41 @@ ul {
     height: 250px;
 }
 #foobar { display: none }
+.p1Life {
+    background: green;
+    border: solid;
+    margin: auto;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.p2Life {
+    background: green;
+    border: solid;
+    margin: auto;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    width: 75px;
+    text-align: center;
+} 
+#mon {
+    border: solid red;
+    margin: auto;
+    background-color: gray;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    text-shadow: black 1px 0 10px;
+}
+.foe {
+    background: silver;
+    padding: 10px;
+    border: solid blueviolet;
+    font-weight: bold;
+    font-size: 25px;
+}
+.pika {
+    margin-right:200px;
+}

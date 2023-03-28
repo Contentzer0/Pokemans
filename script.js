@@ -12,8 +12,3 @@ function choose(name, imageUrl, special) {
     location.href = "battle.html"    
 } 
 
-// function getChoice() {
-
-//     console.log(name1, imageUrl1, special1)
-// } 
-// getChoice();
