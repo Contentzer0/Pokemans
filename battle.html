@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Battle!</title>
     <link rel="stylesheet" href="battle.css">
     <script src="battle.js" defer></script>
 </head>
 <body>
-
+    <div class="text1"></div>
+    <div class="death life">
+        <img src="death.png" alt="You Died" srcset="" class="youDied">
+    </div>
     <div class="rival" height="250px"><span class="foe">Pika-chungus</span>
         <img src="theboi.gif" height="250px" class="pika">
         <p class="p2Life">999</p>
     </div>
-    <div class="text"></div>
+    <div class="text"><span class="delay"></span></div>
     <div class="moves">
         <ul>
-            <button class="specials button">Special</button>
-            <button class="default button tackle">Tackle!</button>
-            <button class="default button leer">Leer!</button>
+            <button class="specials button" onclick="incrementCounter()"><span class="elem"></span>Special</button>
+            <button class="default button tackle" onclick="incrementCounter()">Tackle!</button>
+            <button class="default button leer" onclick="incrementCounter()">Leer!</button>
         </ul>
     </div>
     <div class="choice" height="250px" id="player"><span id="mon"></span>
         <p class="p1Life">25</p>
-    </div>       
+    </div>
     <audio id="foobar" src="battletheme.mp3" preload="auto" autoplay="autoplay" loop="loop"></audio>
+    <script>
+          var audio = document.getElementById("foobar");
+          audio.volume = .1;
+    </script>
 </body>
 
 </html>

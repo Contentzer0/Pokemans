@@ -13,6 +13,17 @@ ul {
     background: lightgray;
     padding: 15px;
 }
+#foobar { display: none }
+#mon {
+    border: solid red;
+    margin: auto;
+    background-color: gray;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    text-shadow: black 1px 0 10px;
+}
 .rival {
     grid-column: 3 / span 1;
     grid-row: 2;
@@ -31,7 +42,11 @@ ul {
     justify-content: center;
     align-items: center;
     margin: 150px;
-    border: solid gold
+    border: solid gold;
+}
+.delay {
+    z-index: 1;
+    color: black;
 }
 .moves {
     grid-column: 3;
@@ -54,14 +69,13 @@ ul {
     border-color: #e7e7e7;
     color: black;
 }
-  
+
 .default:hover {
     background: #e7e7e7;
 }
 .image {
     height: 250px;
 }
-#foobar { display: none }
 .p1Life {
     background: green;
     border: solid;
@@ -80,16 +94,6 @@ ul {
     width: 75px;
     text-align: center;
 } 
-#mon {
-    border: solid red;
-    margin: auto;
-    background-color: gray;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 25px;
-    color: white;
-    text-shadow: black 1px 0 10px;
-}
 .foe {
     background: silver;
     padding: 10px;
@@ -99,4 +103,52 @@ ul {
 }
 .pika {
     margin-right:200px;
+}
+.youDied {
+    scale: 40%;
+}
+.death {
+    position: absolute;
+}
+.life {
+    visibility: hidden;
+}
+.text1 {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 100px;
+    color: #ffc107;
+    font-family: Courier New;
+    text-shadow: 0px 0px 0 rgb(246,184,0),
+                 1px 1px 0 rgb(237,175,0),
+                 2px 2px 0 rgb(228,166,0),
+                 3px 3px 0 rgb(219,157,0),
+                 4px 4px 0 rgb(209,147,0),
+                 5px 5px 0 rgb(200,138,0),
+                 6px 6px 0 rgb(191,129,0),
+                 7px 7px 0 rgb(182,120,0), 
+                 8px 8px 0 rgb(173,111,0),
+                 9px 9px 0 rgb(164,102,0),
+                 10px 10px 0 rgb(155,93,0),
+                 11px 11px 0 rgb(146,84,0),
+                 12px 12px 0 rgb(137,75,0),
+                 13px 13px 0 rgb(128,66,0),
+                 14px 14px 0 rgb(118,56,0),
+                 15px 15px 0 rgb(109,47,0),
+                 16px 16px 0 rgb(100,38,0),
+                 17px 17px 0 rgb(91,29,0),
+                 18px 18px 0 rgb(82,20,0),
+                 19px 19px 0 rgb(73,11,0),
+                 20px 20px 0 rgb(64,2,0),
+                 21px 21px 0 rgb(55,-7,0),
+                 22px 22px 0 rgb(46,-16,0),
+                 23px 23px 0 rgb(36,-26,0),
+                 24px 24px 0 rgb(27,-35,0),
+                 25px 25px 0 rgb(18,-44,0),
+                 26px 26px 0 rgb(9,-53,0),
+                 27px 27px 0 rgb(0,-62,0),
+                 28px 28px  0 rgb(-9,-71,0),
+                 29px 29px 28px rgba(0,0,0,0.66),
+                 29px 29px 1px rgba(0,0,0,0.5),
+                 0px 0px 28px rgba(0,0,0,.2);
 }
